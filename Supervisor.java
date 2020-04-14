@@ -12,6 +12,7 @@ public class Supervisor extends Management {
 		if (decision ==true) {
 			System.out.println("Supervisor will approve your $" + demand+" payment." );
 		} else if(nextOperative != null) {
+			System.out.println("Supervisor: I will follow this to my supervisor");
 			nextOperative.processRequest(request);
 			
 		}
