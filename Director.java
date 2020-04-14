@@ -11,6 +11,7 @@ public class Director extends Management {
 			if (decision ==true) {
 				System.out.println("Director will approve your $" + demand+" raise." );
 			} else if(nextOperative != null) {
+				System.out.println("Director: I will follow this to my supervisor");
 				nextOperative.processRequest(request);
 				
 			}
