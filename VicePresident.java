@@ -12,6 +12,7 @@ public class VicePresident extends Management {
 		if (decision ==true) {
 			System.out.println("Vice president will approve your $" + demand+" payment." );
 		} else if(nextOperative != null) {
+			System.out.println("Vice president: I will follow this to my supervisor");
 			nextOperative.processRequest(request);
 			
 		}
